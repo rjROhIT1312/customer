@@ -10,7 +10,8 @@ const customerSchema = new mongoose.Schema({
     customerID : String,
     status : {
         type : String,
-        enum : ["ACTIVE" , "INACTIVE"]
+        enum : ["ACTIVE" , "INACTIVE"],
+        default : "ACTIVE"
     }
     
 },{timestamps : true})
